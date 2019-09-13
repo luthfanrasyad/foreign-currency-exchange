@@ -37,6 +37,14 @@ export default {
   padding: 0px 5px;
   margin-bottom:5px;
 }
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: 0 0 0 0rem rgba(108,117,125,.5);
+}
+.btn-secondary:hover {
+  background-color:white;
+  border-color:black;
+  color:black;
+}
 
 .dropup button{
   width:100%;
@@ -45,8 +53,8 @@ export default {
 
 }
 .btn-secondary {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color:#4d2a86;
     border-color: black;
     border:2px solid black;
 }

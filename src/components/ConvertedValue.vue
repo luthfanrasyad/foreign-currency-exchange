@@ -15,7 +15,7 @@
       </div>
 
       <div class="del-button col-2">
-          <button class="btn" v-on:click="$emit('delCurrency',item)"><img src="https://image.flaticon.com/icons/svg/77/77679.svg"></button>
+          <button class="btn" v-on:click="$emit('delCurrency',item)">  <font-awesome-icon icon="trash" /></button>
       </div>
     </div>
   </div>

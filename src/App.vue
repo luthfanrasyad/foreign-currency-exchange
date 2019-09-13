@@ -76,7 +76,8 @@ html, body {
   overflow-y: scroll;
   width:500px;
   border: 2px solid black;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
+  font-family: "Roboto Slab", serif;
   font-weight:bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

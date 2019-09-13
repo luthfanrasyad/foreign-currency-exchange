@@ -35,6 +35,8 @@ export default {
   padding: 15px 15px 5px 15px;
   margin-bottom: 5px;
   border-bottom:2px solid black;
+  background-color: #4d2a86;
+  color:white;
 }
 .currency_input {
   width:80%;
@@ -46,6 +48,11 @@ export default {
   width:100%;
   font-weight: bold;
   border:none;
+  background-color: #4d2a86;
+  color:white;
+}
+.currency_input input:focus {
+  outline: none;
 }
 .valuation-title {
   margin-bottom: 0px;
@@ -56,5 +63,6 @@ export default {
 }
 .valuation {
   margin-bottom: 7px;
+  font-size:26px;
 }
 </style>
