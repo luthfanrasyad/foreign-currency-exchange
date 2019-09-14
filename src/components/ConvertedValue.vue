@@ -99,6 +99,7 @@ export default {
         bottom:0;
         padding:0px;
         margin:0px;
+        margin-bottom:-5px;
         height:45%;
         width:40%;
       }

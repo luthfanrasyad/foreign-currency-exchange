@@ -7,7 +7,7 @@
       <div class=" valuation row justify-content-between">
         <p><b>USD</b></p>
         <form class="currency_input">
-          <input type='number' min='0' v-on:input="$emit('updateBaseCurrency',{'usd':baseCurrency})" v-model='baseCurrency' name="baseCurrency" placeholder="USD Base Currency">
+          <input type='number' min='0' v-on:input="$emit('updateBaseCurrency',{'usd':baseCurrency})" v-model='baseCurrency' name="baseCurrency" placeholder="Amount">
         </form>
       </div>
 
@@ -67,7 +67,5 @@ export default {
     }
   }
 }
-
-
 
 </style>
