@@ -1,5 +1,5 @@
 # Foreign Exchange Currency
-
+### Built using Vue.js
 ## Project setup
 ```
 npm install
