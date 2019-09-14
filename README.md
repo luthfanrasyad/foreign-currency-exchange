@@ -1,4 +1,4 @@
-# foreign-exchange-currency
+# Foreign Exchange Currency
 
 ## Project setup
 ```
@@ -25,6 +25,8 @@ npm run test
 npm run lint
 ```
 
+## Run in Docker Container
+
 ### Build Docker image
 ```
 docker build -t vuejs-cookbook/dockerize-vuejs-app .
@@ -37,3 +39,17 @@ docker run -it -p 8080:8080 --rm --name dockerize-vuejs-app-1 vuejs-cookbook/doc
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Structure of Application
+
+### Component Structure
+                                 ----------------------- App -----------------------
+                                 |                        |                         |
+                                 |                        |                         |
+                                 |                        |                         |  
+                            BaseCurrency              Converted               AddCurrency
+                                                          |
+                                                          |
+                                                          |
+                                                    ConvertedValue
+
