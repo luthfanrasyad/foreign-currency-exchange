@@ -1,5 +1,6 @@
 # Foreign Exchange Currency
 ### Built using Vue.js
+Try the application https://ovo-test.herokuapp.com/
 ## Project setup
 ```
 npm install
