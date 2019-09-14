@@ -7,7 +7,7 @@
       <div class=" valuation row justify-content-between">
         <p><b>USD</b></p>
         <form class="currency_input">
-          <input type='number' min='0' v-on:input="$emit('sharedCurrency',{'usd':base_currency})" v-model='base_currency' name="base_currency" place="USD Base Currency">
+          <input type='number' min='0' v-on:input="$emit('updateBaseCurrency',{'usd':baseCurrency})" v-model='baseCurrency' name="baseCurrency" placeholder="USD Base Currency">
         </form>
       </div>
 
@@ -19,50 +19,55 @@
 export default {
   name: 'BaseCurrency',
   props: [
-    "rates",
-    "current_usd"
+    "currentUSD"
   ],
   data() {
     return {
-      base_currency: this.current_usd
+      baseCurrency: this.currentUSD
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #base_currency {
   padding: 15px 15px 5px 15px;
   margin-bottom: 5px;
   border-bottom:2px solid black;
   background-color: #4d2a86;
   color:white;
+
+  .valuation-title {
+    margin-bottom: 0px;
+  }
+
+  .valuation {
+    margin-bottom: 7px;
+    font-size:26px;
+    p {
+     margin:auto;
+     margin-left:0px
+    }
+
+  }
+  .currency_input {
+    width:80%;
+    input {
+     text-align: right;
+     height:100%;
+     vertical-align: middle;
+     width:100%;
+     font-weight: bold;
+     border:none;
+     background-color: #4d2a86;
+     color:white;
+   }
+    input:focus {
+      outline:none;
+    }
+  }
 }
-.currency_input {
-  width:80%;
-}
-.currency_input input {
-  text-align: right;
-  height:100%;
-  vertical-align: middle;
-  width:100%;
-  font-weight: bold;
-  border:none;
-  background-color: #4d2a86;
-  color:white;
-}
-.currency_input input:focus {
-  outline: none;
-}
-.valuation-title {
-  margin-bottom: 0px;
-}
-.valuation p {
-  margin:auto;
-  margin-left:0px
-}
-.valuation {
-  margin-bottom: 7px;
-  font-size:26px;
-}
+
+
+
 </style>

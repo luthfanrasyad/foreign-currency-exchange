@@ -1,8 +1,8 @@
 <template>
   <div id="converted">
     <div class="converted-tab container-fluid">
-      <div class="row" v-bind:key="item" v-for="item in this.showRates">
-        <ConvertedValue v-bind:item="item" v-bind:current_usd='current_usd' v-bind:rates='rates' v-on:delCurrency="$emit('delCurrency',item)" />
+      <div class="row" v-bind:key="rate" v-for="rate in this.showRates"> <!--Call the ConvertedValue component for every rate in the showRates list -->
+        <ConvertedValue v-bind:rate="rate" v-bind:currentUSD='currentUSD' v-bind:allRates='allRates' v-on:delCurrency="$emit('delCurrency',rate)" />
       </div>
     </div>
   </div>
@@ -20,14 +20,12 @@ export default {
     ConvertedValue
   },
   props: [
-    "current_usd","rates","showRates"
+    "currentUSD","allRates","showRates"
 
   ]
 }
 </script>
-
-
-<style>
+<style lang="scss">
 #converted {
   padding:5px;
 }
